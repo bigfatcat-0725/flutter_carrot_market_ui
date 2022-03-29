@@ -12,4 +12,4 @@
 <img src="assets/채팅.png" width="300" height="600"/>
 
 <img src="assets/나의당근.png" width="300" height="600"/>
-<img src="assets/좋아요목록.png" width="3000" height="600"/>
+<img src="assets/좋아요목록.png" width="300" height="600"/>
