@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_carrot_market_ui/controllers/like_controller.dart';
 import 'package:flutter_carrot_market_ui/models/product.dart';
+import 'package:flutter_carrot_market_ui/models/user.dart';
 import 'package:flutter_carrot_market_ui/screens/components/divide_line.dart';
 import 'package:flutter_carrot_market_ui/screens/components/image_container.dart';
 import 'package:flutter_carrot_market_ui/screens/home/product/components/product_view.dart';
@@ -17,8 +19,7 @@ class ProductScreen extends StatefulWidget {
 }
 
 class _ProductScreenState extends State<ProductScreen> {
-  var isSelected = false;
-  var heart = CupertinoIcons.heart;
+  final LikeController likeController = LikeController();
 
   @override
   Widget build(BuildContext context) {
@@ -84,11 +85,11 @@ class _ProductScreenState extends State<ProductScreen> {
               (context, index) => Column(
                 children: [
                   ProductHead(widget: widget),
-                  DivideLine(),
+                  divideLine(),
                   ProductBody(widget: widget),
-                  DivideLine(),
+                  divideLine(),
                   Report(),
-                  DivideLine(),
+                  divideLine(),
                   WithProduct(widget: widget),
                 ],
               ),
@@ -111,17 +112,16 @@ class _ProductScreenState extends State<ProductScreen> {
           children: [
             Row(
               children: [
-                IconButton(
-                  onPressed: () {
-                    setState(() {
-                      isSelected = !isSelected;
-                      heart = isSelected
-                          ? CupertinoIcons.heart_fill
-                          : CupertinoIcons.heart;
-                    });
-                  },
-                  icon: Icon(
-                    CupertinoIcons.heart,
+                Obx(
+                  () => IconButton(
+                    onPressed: () {
+                      bigfatcat.likes.contains(widget.product.title)
+                          ? likeController.offLike(widget.product)
+                          : likeController.onLike(widget.product);
+                    },
+                    icon: bigfatcat.likes.contains(widget.product.title)
+                        ? Icon(CupertinoIcons.heart_fill)
+                        : Icon(CupertinoIcons.heart),
                     color: Colors.red,
                   ),
                 ),

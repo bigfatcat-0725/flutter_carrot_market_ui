@@ -45,7 +45,7 @@ class StoreItem extends StatelessWidget {
                   height: 8,
                 ),
                 Text(
-                  '${recommendStore.description}',
+                  recommendStore.description,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: textTheme().subtitle1,
@@ -90,7 +90,7 @@ class StoreItem extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: '${recommendStore.comment}',
+                      text: recommendStore.comment,
                       style: TextStyle(fontSize: 12, color: Colors.black),
                     ),
                   ],

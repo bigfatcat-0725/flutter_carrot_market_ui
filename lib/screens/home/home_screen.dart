@@ -155,11 +155,11 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         itemCount: productList.length,
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.orange,
-        child: Icon(CupertinoIcons.add),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {},
+      //   backgroundColor: Colors.orange,
+      //   child: Icon(CupertinoIcons.add),
+      // ),
     );
   }
 }

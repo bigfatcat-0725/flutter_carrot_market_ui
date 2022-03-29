@@ -30,7 +30,7 @@ class CardIconMenu extends StatelessWidget {
   Widget _buildRowIconItem(String title, IconData iconData) {
     return InkWell(
       onTap: () {},
-      child: Container(
+      child: SizedBox(
         height: 50,
         child: Row(
           children: [

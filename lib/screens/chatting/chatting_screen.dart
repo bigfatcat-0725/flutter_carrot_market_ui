@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_carrot_market_ui/models/chat_message.dart';
 import 'package:flutter_carrot_market_ui/theme.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../components/appbar_preferred_size.dart';
 import 'components/chat_container.dart';
 

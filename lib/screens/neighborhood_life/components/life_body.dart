@@ -2,9 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_carrot_market_ui/models/neighborhood_life.dart';
 import 'package:flutter_carrot_market_ui/screens/components/divide_line.dart';
-import 'package:flutter_carrot_market_ui/screens/components/image_container.dart';
 import 'package:flutter_carrot_market_ui/theme.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LifeBody extends StatelessWidget {
   const LifeBody({Key? key, required this.neighborhoodLife}) : super(key: key);
@@ -28,7 +26,7 @@ class LifeBody extends StatelessWidget {
           _buildWriting(),
           _buildImage(),
           _buildWriter(),
-          DivideLine(),
+          divideLine(),
           _buildTail(neighborhoodLife.commentCount),
         ],
       ),

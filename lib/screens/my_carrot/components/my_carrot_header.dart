@@ -1,8 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_carrot_market_ui/screens/my_carrot/likes_list_screen.dart';
 import 'package:flutter_carrot_market_ui/theme.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:dotted_border/dotted_border.dart';
+import 'package:get/get.dart';
 
 class MyCarrotHeader extends StatelessWidget {
   const MyCarrotHeader({Key? key}) : super(key: key);
@@ -30,7 +31,13 @@ class MyCarrotHeader extends StatelessWidget {
               children: [
                 _buildRoundTextButton('판매내역', FontAwesomeIcons.receipt),
                 _buildRoundTextButton('구매내역', FontAwesomeIcons.bagShopping),
-                _buildRoundTextButton('관심목록', FontAwesomeIcons.solidHeart),
+                InkWell(
+                  onTap: () {
+                    Get.to(() => LikesListScreen());
+                  },
+                  child: _buildRoundTextButton(
+                      '관심목록', FontAwesomeIcons.solidHeart),
+                ),
               ],
             ),
           ],
@@ -115,7 +122,7 @@ class MyCarrotHeader extends StatelessWidget {
       dashPattern: [6, 3],
       borderType: BorderType.RRect,
       radius: Radius.circular(10),
-      child: Container(
+      child: SizedBox(
         height: 45,
         child: Center(
           child: Padding(

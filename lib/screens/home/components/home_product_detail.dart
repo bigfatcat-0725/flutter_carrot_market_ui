@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_carrot_market_ui/models/product.dart';
 import 'package:flutter_carrot_market_ui/theme.dart';
 import 'package:intl/intl.dart';

@@ -1,12 +1,15 @@
 # flutter_carrot_market_ui
 
-- 생각날 때마다 UI 작업 추가
-- 재밌는데 양이 많다..?
+<img src="assets/스플래쉬.png" width="250" height="550"/>
+<img src="assets/홈.png" width="250" height="550"/>
+<img src="assets/지역.png" width="250" height="550"/>
+<img src="assets/게시물.png" width="250" height="550"/>
+<img src="assets/제품확대.png" width="250" height="550"/>
+<img src="assets/검색.png" width="250" height="550"/>
 
-![1](assets/1.png)
-![2](assets/2.png)
-![3](assets/3.png)
-![4](assets/4.png)
-![5](assets/5.png)
-![6](assets/6.png)
-![7](assets/7.png)
+<img src="assets/동네생활.png" width="250" height="550"/>
+<img src="assets/내근처.png" width="250" height="550"/>
+<img src="assets/채팅.png" width="250" height="550"/>
+
+<img src="assets/나의당근.png" width="250" height="550"/>
+<img src="assets/좋아요목록.png" width="250" height="550"/>

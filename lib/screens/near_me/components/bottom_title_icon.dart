@@ -11,7 +11,7 @@ class BottomTitleIcon extends StatelessWidget {
     return InkWell(
       onTap: () {},
       borderRadius: BorderRadius.circular(100),
-      child: Container(
+      child: SizedBox(
         width: 70,
         height: 70,
         child: Column(

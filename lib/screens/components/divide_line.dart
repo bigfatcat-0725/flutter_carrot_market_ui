@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Divider DivideLine() {
+Divider divideLine() {
   return Divider(
     thickness: 0.5,
     height: 0.5,
